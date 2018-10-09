@@ -12,5 +12,5 @@ addons:
 script:
 - hexo generate && rsync -az -vv --delete -e 'ssh -p 22' public/ root@47.96.87.250:/home/blog
 before_install:
-- openssl aes-256-cbc -K $encrypted_c0a82d889265_key -iv $encrypted_c0a82d889265_iv
-  -in travis.enc -out travis -d
+- openssl aes-256-cbc -K $encrypted_c0a82d889265_key -iv $encrypted_c0a82d889265_iv -in travis.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
