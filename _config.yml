@@ -73,16 +73,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: rsync
-  host: 47.96.87.250
-  user: root
-  root: /home/blog
-  port: 22
-  delete: true
-  verbose: true
-  ignore_errors: false
+  type: 
