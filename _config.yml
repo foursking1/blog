@@ -8,7 +8,7 @@ subtitle:
 description:
 keywords:
 author: John Doe
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -43,7 +43,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -78,4 +78,11 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: 47.96.87.250
+  user: root
+  root: /home/blog
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
