@@ -8,7 +8,7 @@ install:
 - npm install hexo-cli -g
 - npm install
 addons:
-  ssh_known_hosts:  47.96.87.250:22
+  ssh_known_hosts: 47.96.87.250:22
 script:
 - hexo generate && rsync -az -vv --delete -e 'ssh -p 22' public/ root@47.96.87.250:/home/blog
 before_install:
