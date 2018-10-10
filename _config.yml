@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 快学
-subtitle: 
+title: 快学指南
+subtitle: 关注深度学习，量化交易等领域
 description:
 keywords:
 author: felix
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://fast2do.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
