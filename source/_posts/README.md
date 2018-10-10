@@ -1,3 +1,12 @@
+---
+layout: post
+title: Session And Side Info Model For Embedding
+tags: [test]
+comments: true
+
+---
+
+
 ### Session And Side Info Model For Embedding
 
 Author : ZJun 
@@ -161,7 +170,7 @@ python3 -B -u tf_projector_tensorboard.py \
 **原始想法：（写下来，避免以后踩坑）**
 
 手头有基于行为学到的向量V_act和基于属性的向量V_p并且有每个商品上架距离当前的时间t
- 
+
 那么可以构建函数 combine( V_act,V_p,time_decay(t)) 来获取融合的向量，这样得到的向量可以满足：
 越新的商品，属性向量贡献越强
 
