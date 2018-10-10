@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 快学指南
-subtitle: 关注深度学习，量化交易等领域
+title: Hexo
+subtitle:
 description:
 keywords:
-author: felix
+author: John Doe
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://fast2do.com
+url: http://yoursite.com
 root: /
-permalink: :title.html
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -75,6 +75,9 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+addlink:
+  before_text: __本文作者__：felix <br />__本文地址__：  
+  after_text: <br />版权声明：转载请注明出处！
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
