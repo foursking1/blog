@@ -1,7 +1,6 @@
 ---
-layout: post
-title: tensorflow tutorial 0 [introduction]
-date: 2018-10-10
+title: Dataset 
+date: 2018-10-11
 ---
 
 # Dataset 
