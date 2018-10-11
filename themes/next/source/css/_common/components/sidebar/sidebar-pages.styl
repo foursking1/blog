@@ -1,0 +1,43 @@
+.post-pages { overflow: auto; }
+
+.post-pages ol {
+  margin: 0;
+  padding: 0 2px 5px 10px;
+  text-align: left;
+  list-style: none;
+  font-size: 14px;
+
+  & > ol { padding-left: 0; }
+
+  a {
+    color: $toc-link-color;
+    border-bottom-color: $toc-link-border-color;
+
+    &:hover {
+      color: $toc-link-hover-color;
+      border-bottom-color: $toc-link-hover-border-color;
+    }
+  }
+}
+
+.post-toc .nav-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  white-space: nowrap if !hexo-config('toc.wrap');
+  line-height: 1.8;
+}
+
+
+.post-pages .nav-item .current > a{
+  color: $toc-link-active-current-color;
+}
+
+.post-pages span.nav-title {
+  padding: 10px 0
+  font-family: font-title
+  font-weight: bold
+  display: inline-block
+  line-height: 1
+  color: $toc-link-active-current-color;
+}

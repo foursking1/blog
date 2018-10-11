@@ -153,8 +153,8 @@
 
       {% if is_page() and toc(page.content).length > 1 %}
         <section class="site-page-list sidebar-panel">
-          <div class="post-toc">           
-            <div class="post-toc-content">{{ doc_sidebar('sidebar') }}</div>
+          <div class="post-pages">           
+            <div class="post-pages-content">{{ doc_sidebar('sidebar') }}</div>
           </div>
         </section>
       {% endif %}
