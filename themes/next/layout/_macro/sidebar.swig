@@ -15,7 +15,7 @@
 
       {% set display_toc = is_post and theme.toc.enable or is_page and theme.toc.enable %}
 
-      {% if display_toc and toc(page.content).length > 1 %}
+      {% if display_toc and toc(page.content).length > 1 and not is_page() %}
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             {{ __('sidebar.toc') }}
@@ -25,6 +25,18 @@
           </li>
         </ul>
       {% endif %}
+
+      {% if is_page() and toc(page.content).length > 1 %}
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            {{ __('sidebar.toc') }}
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-page-list">
+            {{ __('sidebar.pages') }}
+          </li>
+        </ul>
+      {% endif %}
+
 
       <section class="site-overview-wrap sidebar-panel{% if not display_toc or toc(page.content).length <= 1 %} sidebar-panel-active{% endif %}">
         <div class="site-overview">
@@ -138,6 +150,14 @@
           {% include '../_custom/sidebar.swig' %}
         </div>
       </section>
+
+      {% if is_page() and toc(page.content).length > 1 %}
+        <section class="site-page-list sidebar-panel">
+          <div class="post-toc">           
+            <div class="post-toc-content">{{ doc_sidebar('sidebar') }}</div>
+          </div>
+        </section>
+      {% endif %}
 
       {% if display_toc and toc(page.content).length > 1 %}
       <!--noindex-->

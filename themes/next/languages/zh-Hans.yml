@@ -19,7 +19,8 @@ menu:
 
 sidebar:
   overview: 站点概览
-  toc: 文章目录
+  toc: 文章内容
+  pages: 文章目录
 
 post:
   created: 创建于

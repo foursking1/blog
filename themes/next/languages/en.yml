@@ -20,6 +20,7 @@ menu:
 sidebar:
   overview: Overview
   toc: Table of Contents
+  pages: Pages
 
 post:
   created: Post created

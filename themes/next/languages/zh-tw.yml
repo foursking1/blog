@@ -20,6 +20,7 @@ menu:
 sidebar:
   overview: 本站概覽
   toc: 文章目錄
+  pages: 文章目錄
 
 post:
   created: 創建於
