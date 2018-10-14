@@ -66,6 +66,30 @@ filenames = ["/var/data/file1.tfrecord", "/var/data/file2.tfrecord"]
 dataset = tf.data.TFRecordDataset(filenames)
 ```
 
+
+
+# Dataset 数据操作
+
+通过上一节介绍的API读入数据后通常还需要进一步处理以方便后续使用，我们从数据处理和数据准备两个角度来介绍
+
+## 数据处理
+
+### 解析CSV文件
+
+### 解析tfrecord文件
+
+
+## 数据准备
+
+- shuffle
+- repeat
+- batch
+
+# Dataset 数据输出
+- 输出结构和后期运用介绍
+
+# 进阶补充
+
 ### 构建TFRecord文件
 
 此处需要另外说明的就是如何构建TFRecord文件
@@ -148,41 +172,9 @@ features {
 
 
 
-# Dataset 数据操作
+### 自定义map处理函数
 
-通过上一节介绍的API读入数据后通常还需要进一步处理以方便后续使用，我们从数据处理和数据准备两个角度来介绍
-
-## 数据处理
-
-### 解析CSV文件
-
-
-
-### 解析tfrecord文件
-
-
-
-### 利用map做自定义处理操作
-
-
-
-
-## 数据准备
-
-- shuffle
-- repeat
-- batch
-
-# Dataset 数据输出
-- 输出结构和后期运用介绍
-
-# 进阶补充
-- 自定义map处理函数
-- 性能调优：prefetch
-
-
-
-
+### 性能调优：prefetch
 
 
 
