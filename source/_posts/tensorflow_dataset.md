@@ -103,7 +103,7 @@ def writeTFRecord(raw_data_path_list,tfrecord_file_name):
     # open the TFRecords file
     writer = tf.python_io.TFRecordWriter(tfrecord_file_name)
 
-    for data_file_path in data_path_list:
+    for data_file_path in raw_data_path_list:
         print('precess {}'.format(data_file_path))
         with open(data_file_path, 'r') as f:
             for line in f.readlines():
