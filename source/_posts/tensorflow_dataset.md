@@ -21,7 +21,7 @@ Dataset支持各种数据的读取，总的可以分为两类，内存读取和�
 ## 内存读取
 ### tf.data.Dataset.from_tensor_slices
 
-如果你的数据能够全部读进内存，那么创建Dataset做简单的便利的方法就是使用`tf.data.Dataset.from_tensor_slices`，
+如果你的数据能够全部读进内存，那么创建Dataset最简单的方法就是使用`tf.data.Dataset.from_tensor_slices`，
 
 ```python
 # Load the training data into two NumPy arrays, for example using `np.load()`.
